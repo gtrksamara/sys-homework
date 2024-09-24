@@ -70,14 +70,6 @@
 В качестве ответа пришлите скриншоты с настройками проекта и результатами выполнения сборки.
 
 
-
-1. `Заполните здесь этапы выполнения, если требуется ....`
-2. `Заполните здесь этапы выполнения, если требуется ....`
-3. `Заполните здесь этапы выполнения, если требуется ....`
-4. `Заполните здесь этапы выполнения, если требуется ....`
-5. `Заполните здесь этапы выполнения, если требуется ....`
-6. 
-
 ```
 Поле для вставки кода
 pipeline {
@@ -128,5 +120,8 @@ pipeline {
 ```
 
 `При необходимости прикрепитe сюда скриншоты
-![Название скриншота](ссылка на скриншот)`
+![out1](https://github.com/gtrksamara/sys-homework/blob/main/img/out1.jpg)
+![out2](https://github.com/gtrksamara/sys-homework/blob/main/img/out2.jpg)
+![out3](https://github.com/gtrksamara/sys-homework/blob/main/img/out3.jpg)
+![nexus](https://github.com/gtrksamara/sys-homework/blob/main/img/nexus.jpg)
 
