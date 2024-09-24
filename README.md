@@ -37,6 +37,8 @@
 
 ![menu](https://github.com/gtrksamara/sys-homework/blob/main/img/menu.jpg)
 ![menu2](https://github.com/gtrksamara/sys-homework/blob/main/img/menu2.jpg)
+![console_output](https://github.com/gtrksamara/sys-homework/blob/main/img/console_output.jpg)
+![console_output2](https://github.com/gtrksamara/sys-homework/blob/main/img/console_output2.jpg)
 
 
 ---
