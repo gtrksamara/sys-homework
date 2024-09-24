@@ -35,7 +35,7 @@
 
 
 
-![alt text](https://github.com/gtrksamara/main/sys-homework/img/menu.jpeg)
+![menu](https://github.com/gtrksamara/sys-homework/main/img/menu.jpeg)
 
 
 ---
