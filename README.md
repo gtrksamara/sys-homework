@@ -79,9 +79,50 @@
 6. 
 
 ```
-Поле для вставки кода...
-....
-....
+Поле для вставки кода
+pipeline {
+    agent any
+
+    environment {
+        NEXUS_URL = 'http://192.168.1.108:8081' 
+        NEXUS_REPO = 'my_repo' 
+        NEXUS_CREDENTIALS_ID = 'admin:password' 
+    }
+
+    stages {
+        stage('Clone') {
+            steps {
+                git url:'https://github.com/AndreyTest010/sdvps-materials.git', branch:'main'  
+            }
+        }
+
+        stage('Build') {
+            steps {
+                sh 'go build -o myapp .' 
+            }
+        }
+
+        stage('Upload to Nexus') {
+            steps {
+                script {
+                    def fileToUpload = 'myapp'  
+                    def nexusCredentials = "${NEXUS_CREDENTIALS_ID}"
+                    sh """
+                        curl -v --user $nexusCredentials --upload-file ${fileToUpload} ${NEXUS_URL}/repository/${NEXUS_REPO}/${fileToUpload}
+                    """
+                }
+            }
+        }
+    }
+
+    post {
+        success {
+            echo 'Build and upload to Nexus completed successfully!'
+        }
+        failure {
+            echo 'Build or upload failed.'
+        }
+    
 ....
 ....
 ```
